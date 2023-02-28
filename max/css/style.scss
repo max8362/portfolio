@@ -154,13 +154,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1c3fc', end
 
 }
 .bgGbora{
+    background: #6A6FD5; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #6A6FD5 0%, #705BB9 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #6A6FD5 0%,#705BB9 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #6A6FD5 0%,#705BB9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6A6FD5', endColorstr='#705BB9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+     
 
 }
 .bgGpink{
+    background:#F7C0EA; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #F7C0EA 0%, #A78FD2 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #F7C0EA 0%,#A78FD2 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #F7C0EA 0%,#A78FD2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6A6FD5', endColorstr='#705BB9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+     
 
 }
 .bgGdrak{
+    background: #092140; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #092140 0%, #507491 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #092140 0%,#507491 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #092140 0%,#507491 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6A6FD5', endColorstr='#705BB9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
 
+.right{
+    right: 0 !important;
+}
+.bottom-0{
+    bottom: 0 !important;
+} 
+.left-0{
+    left: 0 !important;
+}
+.top-0{
+  top:0 !important
 }
 
 
@@ -197,10 +226,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1c3fc', end
     }
     
 }
+.textBox{
+    line-height: 2;
+}
+.movie{
+    height: 0;
+    padding-top: 56%;
+    position: relative;
+}
+.movie iframe{ position: absolute; left:0; width: 100%; top:0; height: 100%;}
 
-
+.maxforest{
+    background: url(/max/img/bg_forest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav-item{ 
+    a{
+       padding:.5rem  1rem;
+       &.active{
+        color:#6B6DD2 !important
+       }
+    }
+    
+}
 
 #hd{
+    
     h1{
         img{
             max-width: 130px;
@@ -211,4 +263,89 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1c3fc', end
         font-size: 20px;
         font-weight: bold;
     }
+}
+
+#mgnb{
+    position: relative;
+    z-index: 10;
+    i{
+        font-size: 1.8rem;
+    }
+    &.open{
+        i:before{
+            content: "\F659";
+
+        }
+    }
+    
+}
+
+@media (max-width:991px) {
+    #mgnb.open + #gnb{
+        left:0;
+    }
+    #gnb{
+        position: fixed;
+        display: block !important;
+        left:-100%;
+        transition: left 0.5s;
+        top:0;
+        bottom:0;
+        width:100%;
+        background-color: white;
+        padding-top: 5rem;    
+        li{
+            background-color: #F6C7B8;
+            padding: 2vw 0;
+            a{
+                font-size: 6vw;
+                color:#707070;
+                text-indent: 10vw;
+                text-decoration: none;
+            }
+            ul{background-color: #fff3ef;
+                padding-left: 11vw;
+               
+                li{
+                    background-color: #fff3ef;
+                    a{
+                        font-size: 5vw;
+                        color:#F6C7B8;
+                    }
+                }
+            }
+        }    
+    }
+   
+    
+}
+
+@media (max-width:768px) {
+   
+    #gnb{
+     
+        li{
+           
+            padding: 2vw 0;
+            a{
+                font-size: 8vw;
+               
+                text-indent: 10vw;
+              
+            }
+            ul{
+                padding-left: 11vw;
+               
+                li{
+                  
+                    a{
+                        font-size: 5vw;
+                      
+                    }
+                }
+            }
+        }    
+    }
+   
+    
 }

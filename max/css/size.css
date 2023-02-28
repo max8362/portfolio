@@ -1,0 +1,101 @@
+.maxforest img{
+
+}
+.mia{
+    transform: scale(0.9);
+
+}
+.miro{
+    transform: scale(0.9);
+
+
+}
+.moi{
+
+    transform: scale(0.9);
+}
+
+@media (max-width:1280px) {
+    .mia{
+        transform: scale(0.7) translateX(20px)  translateY(90px) !important;
+    }
+    .miro{
+        transform: scale(0.7) translateY(60px) !important;
+    }
+    .moi{
+        transform: scale(0.7) translateX(-30px) translateY(110px) !important;
+    }
+    
+}
+
+@media (max-width:1024px) {
+    .mia{
+        transform: scale(0.6) translateX(40px)  translateY(150px) !important;
+    }
+    .miro{
+        transform: scale(0.6) translateY(90px) !important;
+    }
+    .moi{
+        transform: scale(0.6) translateX(-50px) translateY(180px) !important;
+    }
+    
+}
+@media (max-width:991px) {
+    .mia{
+        transform: scale(0.5) translateX(80px)  translateY(200px) !important;
+    }
+    .miro{
+        transform: scale(0.5) translateY(120px) !important;
+    }
+    .moi{
+        transform: scale(0.5) translateX(-90px) translateY(250px) !important;
+    }
+}    
+@media (max-width:768px) {
+    .mia{ 
+        transform: scale(0.4) translateX(130px)  translateY(320px) !important;
+    }
+    .miro{
+        transform: scale(0.4)  translateY(190px) !important;
+    }
+    .moi{
+        transform: scale(0.4) translateX(-140px) translateY(400px) !important;
+    }
+    
+}
+@media (max-width:540px) {
+    .mia{
+        transform: scale(0.3) translateX(200px)  translateY(500px) !important;
+    }
+    .miro{
+        transform: scale(0.3)  translateY(300px) !important;
+    }
+    .moi{
+        transform: scale(0.3) translateX(-230px) translateY(620px) !important;
+    }
+}
+    
+@media (max-width:420px) {
+    .mia{
+        transform: scale(0.2) translateX(350px)  translateY(850px) !important;
+    }
+    .miro{
+        transform: scale(0.2)  translateY(500px) !important;
+    }
+    .moi{
+        transform: scale(0.2) translateX(-400px) translateY(1050px) !important;
+    }
+    
+}
+@media (max-width:340px) {
+    .mia{
+        transform: scale(0.15) translateX(550px)  translateY(1200px) !important;
+    }
+    .miro{
+        transform: scale(0.15)  translateY(700px) !important;
+    }
+    .moi{
+        transform: scale(0.15) translateX(-580px) translateY(1500px) !important;
+    }
+    
+}
